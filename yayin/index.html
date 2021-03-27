@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="../jquery-3.5.1.min.js"></script>
+    <title>Document</title>
+</head>
+<body style="background-repeat: no-repeat;background-size: cover; background-image: url('./resimler/pexels-silvia-772650.jpg') ">
+<!--- navbar başlangıç -->
+<div id="navbar"></div>
+<!-- navbar sonu -->
+    <!-- içerikler -->
+    <div class="container-fluid align-items-center">
+
+        <div class="row align-middle align-items-center" style="z-index: 2;" >
+            <div class="col">
+            </div>
+            <div class="d-flex justify-content-center ArkaplanRenk col-lg align-items-center flex-column m-5 rounded-2" style="display: none" id="isimKart" >
+               <div class="giris " style="text-align: center">
+                   <p class="h1 yazıRenk rounded">Hoş geldiniz</p>
+                <p class="m-5 display-1 yazıRenk rounded" id="isim">Kerem Ayseli</p></div>
+            </div>
+            <div class="col">
+
+            </div>
+        </div>
+        <div class="row bg-dark">
+        </div>
+    </div>
+
+<!-- footer başlangıcı-->
+<div id="footer" class="h-100"></div>
+<!-- footer sonu-->
+<script type="text/javascript" src="../js/bootstrap.bundle.js"></script>
+</body>
+</html>
+
+<style>
+
+    html,
+    body{
+        height: available;
+        margin: 0;
+    }
+    .giris{
+      height: 600px;
+
+    }
+    .arkaplan{
+        z-index: -1;
+
+        filter: blur(8px);
+        -webkit-filter: blur(8px);
+        position: absolute;
+        background-position: center;
+        background-repeat: revert;
+        background-size: cover;
+        background-color: black;
+    }
+    * {
+        box-sizing: border-box;
+    }
+    .ArkaplanRenk{
+
+    }
+    .yazıRenk{
+        font-family: "Times New Roman";
+        color: #c0fded;
+        background-color: #020202;
+    }
+</style>
+<script>
+    $(document).ready(function (){
+        $("#footer").load("file:///G:\\internetSiteleri\\ozgecmis\\taslaklar\\footer.html");
+        $("#navbar").load("file:///G:\\internetSiteleri\\ozgecmis\\taslaklar\\navbar.html");
+        $('#isimKart').fadeIn(1500);
+
+    })
+</script>
+</html>
